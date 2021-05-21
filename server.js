@@ -3,7 +3,8 @@ import mongoose from 'mongoose'
 import shopRoutes from "./routes/shopRoutes/shopRoutes.js"
 import userRoutes from "./routes/userRoutes/userRoutes.js"
 const router = express.Router()
-
+import Cors from 'cors'
+app.use(Cors());
 //app config
 const app = express();
 app.use(express.json());
