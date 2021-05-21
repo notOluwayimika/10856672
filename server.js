@@ -4,9 +4,10 @@ import shopRoutes from "./routes/shopRoutes/shopRoutes.js"
 import userRoutes from "./routes/userRoutes/userRoutes.js"
 const router = express.Router()
 import Cors from 'cors'
-app.use(Cors());
+
 //app config
 const app = express();
+app.use(Cors());
 app.use(express.json());
 
 const port = process.env.PORT || 8001;
