@@ -1,6 +1,6 @@
 import express from 'express'
 const router = express.Router();
-import User from "../../models/users/dbUsers.js";
+import User from "../../models/users/dbUsers.Js";
 import {getToken} from "../../util.js";
 router.route("/register").post(async (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
